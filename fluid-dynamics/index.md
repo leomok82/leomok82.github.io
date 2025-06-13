@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Foundational Model for Computational Physics"
-permalink: https://leomok82.github.io/fluid-dynamics
+permalink: /fluid-dynamics/
 ---
 
 
