@@ -16,3 +16,20 @@ With inspiration from traditional numerical solvers, SCALED incorporates grid in
 
 We have demonstrated SCALED on a urban flow scenario with complex building geometries. Our tool has numerous applications in monitoring air quality and pollution in urban environments.
 
+## My Responsibilities
+
+- 🧠 Designed and implemented the core generative model architecture
+- 🏗️ Developed scalable training pipelines for large computational fluid dynamics datasets
+- 🔬 Conducted hyperparameter tuning and model evaluation
+- 📝 Authored significant portions of the research manuscript
+- 🤝 Collaborated with domain experts in computational physics and AI
+
+---
+
+## Technologies Used
+
+- PyTorch
+- CUDA / GPU acceleration
+- Jekyll / GitHub Pages (for this site)
+- Scientific Python stack (NumPy, SciPy, Matplotlib)
+- HPC cluster environments
