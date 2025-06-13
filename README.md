@@ -11,7 +11,7 @@ I'm interested in:
 ## Projects
 
 Check out some of the things I've been working on:
-- Fluid Dynamics (/fluid-dynamics)
+- Fluid Dynamics(/fluid-dynamics)
 - 
 
 👉 [View my projects](/project)
@@ -20,5 +20,5 @@ Check out some of the things I've been working on:
 
 You can find me on:
 
-- GitHub: leomok82 (https://github.com/leomok82)
+- GitHub: leomok82(https://github.com/leomok82)
 - Email: leomok82@gmail.com
