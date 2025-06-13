@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Foundational Model for Computational Physics"
 permalink: /fluid-dynamics/
 ---
