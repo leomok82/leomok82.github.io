@@ -1,4 +1,4 @@
-# Hi, I'm Leo Mok
+# Hi, I'm Leo
 
 I'm a deep learning practitioner with a Master's from Imperial, and 1 year professional experience with a research lab at HKU. 
 I'm interested in:
