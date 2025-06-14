@@ -11,9 +11,9 @@ I'm interested in:
 ## Projects
 
 Check out some of the things I've been working on:
-- [Fluid Dynamics](/fluid-dynamics)
-- [C++ DNA alignment](\c++-dna-alignment)
-- [DNA Hash database]
+- [Fluid Dynamics Generative Foundational Model](/fluid-dynamics) (Publication)
+- [C++ DNA alignment tool](\c++-dna-alignment)
+- [Deep learning DNA Hash database]
 - [DNA metadata RAG tool]
 - [C++ image processing tool]
 👉 [View my projects](/project)
