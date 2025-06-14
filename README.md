@@ -12,8 +12,10 @@ I'm interested in:
 
 Check out some of the things I've been working on:
 - [Fluid Dynamics](/fluid-dynamics)
-- 
-
+- [C++ DNA alignment](\c++-dna-alignment)
+- [DNA Hash database]
+- [DNA metadata RAG tool]
+- [C++ image processing tool]
 👉 [View my projects](/project)
 
 ## Contact
