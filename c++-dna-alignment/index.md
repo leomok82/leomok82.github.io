@@ -1,15 +1,22 @@
 ---
 layout: default
-title: "Optimized C++ DNA alignment algorithm and mutation algorithm"
-permalink: /c++-dna-alignment/
+title: "Optimized C++ DNA Alignment and Mutation Algorithms"
+permalink: /cpp-dna-alignment/
 ---
 
 ## Project Origin
-Global Alignment (Needleman Wunsch) is a classic bioinformatics dynamic programming algorithm to compare pairs of entire DNA sequences for similarity. Similarily, Local Alignment (Smith-Waterman) compares core regions of sequences for similarity. 
-<image>
 
- In our project at D24H, we needed to create mutated sequences followed by an alignment of those mutated sequences with the original for deep learning. Therefore, we needed an efficient multithreaded package that can be called thousands of times in batches.
- There are limited multithreaded C++/Python binded packages of global alignment publicly available. Hence, I have developed a package written in C++ and wrapped in PyBind optimized for deep learning, leveraging libtorch (Pytorch C++ API) for tensor implementation of the algorithm.
+Global alignment (Needleman-Wunsch) is a classical dynamic programming algorithm in bioinformatics, used to compare entire DNA sequences for similarity. Similarly, local alignment (Smith-Waterman) identifies and compares the most similar subsequences within a pair of DNA sequences.
 
+![DNA Alignment Overview](your-image-link-here)
 
-## DNA mutations
+For our project at D24H, our deep learning workflow required two critical components:
+1. **Generation of mutated DNA sequences**, and  
+2. **Alignment of these mutated sequences with the original sequences**.
+
+This process needed to be highly efficient, as alignment and mutation were performed thousands of times in batches during training.
+
+While there are a few open-source C++/Python packages available, most do not support multithreading or are not optimized for deep learning workloads. Therefore, I developed a high-performance C++ package, wrapped with PyBind11 and integrated with libtorch (the C++ backend of PyTorch), enabling fast and parallelized alignment and mutation operations suitable for GPU workflows and batch tensor processing.
+
+## Performance
+Our package delivers speeds surpassing implementations from Biopython and Pyalign, including a multitude of options such as semi-global alignment, affine gap penalties, and mutation rates.
