@@ -1,6 +1,6 @@
 # Leo Mok
 
-I'm a deep learning practitioner with a Master's from Imperial, and 1 year professional experience with a research lab at HKU. 
+I'm a deep learning practitioner with a Master's from Imperial, and I have worked with top research labs at Imperial College London and HKU. I have 1 year professional experience with a private funded research lab under HKU. 
 I'm interested in:
 
 - AI applications for science
