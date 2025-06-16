@@ -16,7 +16,21 @@ This project stems from my Msc dissertation at Imperial in attempt to use **diff
 SCALED is a scalable foundational model built on a **diffusion based generative framework** for computational physics, developing a novel method to generalize computational fluid dynamics models to smaller or larger domains at any resolution. With inspiration from traditional numerical solvers, SCALED incorporates grid invariance and scale invariance by using through domain decomposition, with efficient boundary condition exchange across subdomains. 
 
 We have demonstrated SCALED on urban flow scenarios in the **South Kensington Area** as well as **generated unseen building geometries**, with a high degree of accuracy up to 750 time steps.  Our tool has numerous applications in monitoring air quality and pollution in urban environments.
+{% raw %} 
+<div style="display: flex; justify-content: space-between; gap: 20px;">
 
+  <div style="flex: 1; text-align: center;">
+    <img src="/imgs/pde_x.gif" alt="Traditional Airflow" style="max-width: 100%;">
+    <p><strong>Airflow from PDE Solver (Traditional Approach)</strong></p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="/imgs/ai_x.gif" alt="SCALED Airflow" style="max-width: 100%;">
+    <p><strong>Airflow from SCALED</strong></p>
+  </div>
+
+</div>
+{% endraw %} 
 SCALED also outperforms state-of-the-art data-driven deep learning numerical solvers in multiple benchmarks.
 
 ## My Responsibilities
