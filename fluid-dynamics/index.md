@@ -17,21 +17,25 @@ SCALED is a scalable foundational model built on a **diffusion based generative 
 
 We have demonstrated SCALED on urban flow scenarios in the **South Kensington Area** as well as **generated unseen building geometries**, with a high degree of accuracy up to 750 time steps.  Our tool has numerous applications in monitoring air quality and pollution in urban environments.
 {% raw %} 
+<h3 style="text-align: center;">Computational Physics Simulation of the South Kensington Area</h3>
+
 <div style="display: flex; justify-content: space-between; gap: 20px;">
 
   <div style="flex: 1; text-align: center;">
     <img src="/imgs/pde_x.gif" alt="Traditional Airflow" style="max-width: 100%;">
-    <p><strong>Airflow from PDE Solver (Traditional Approach)</strong></p>
+    <p><strong>PDE Solver (Traditional Approach)</strong></p>
   </div>
 
   <div style="flex: 1; text-align: center;">
     <img src="/imgs/ai_x.gif" alt="SCALED Airflow" style="max-width: 100%;">
-    <p><strong>Airflow from SCALED</strong></p>
+    <p><strong>SCALED (Neural Network)</strong></p>
   </div>
 
 </div>
 {% endraw %} 
 SCALED also outperforms state-of-the-art data-driven deep learning numerical solvers in multiple benchmarks.
+
+![Benchmark Table](/imgs/cfd_table.png)
 
 ## My Responsibilities
 
