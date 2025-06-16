@@ -55,7 +55,7 @@ SCALED also outperforms state-of-the-art data-driven deep learning numerical sol
 ## My Responsibilities
 
 - Authored portions of the manuscript
-- Helped conceptualize the generative model architecture
+- Conceptualize the generative model architecture
 - Ran benchmarks against other fluid dynamics neural networks on the HPC (4X A100)
 - Researched additional metrics such as LSiM, which uses a neural network to compare similarity between volumes
 - Involved with discussions for project conceptualization 
