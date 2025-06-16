@@ -35,3 +35,6 @@ SCALED also outperforms state-of-the-art data-driven deep learning numerical sol
 - HPC/Distributed Computing
 - Physics informed Neural Networks
 - Diffusion models
+
+## Acknowledgements
+The paper's first author is Yueyan Li and supervised by Professor Christopher Pain at the Applied Computational Modeling Group. The research is supported by the department of Earth Science and Engineering at Imperial College London.
