@@ -73,3 +73,6 @@ SCALED also outperforms state-of-the-art data-driven deep learning numerical sol
 The paper's first author is Yueyan Li and supervised by Professor Christopher Pain at the Applied Computational Modeling Group. The research is supported by the department of Earth Science and Engineering at Imperial College London. 
 
 Please note that as this paper is still under submission, the manuscript is not yet sharable.
+
+<a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
+
