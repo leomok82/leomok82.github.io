@@ -9,7 +9,7 @@ permalink: /fluid-dynamics/
 ## Scalable Generative model for Computational Physics
 Article title "SCALED : SCALable gEnerative founDational model for Computational Physics demonstrated on Urban Flow" under publication.
 
-# Project Origin
+## Project Origin
 This project stems from my Msc dissertation at Imperial in attempt to use **diffusion transformers** to model the computational fluid dynamics, inspired by *OpenAI's SORA Video Generation* (in 2024) to predict future frames. I developed the diffusion transformer from scratch which was able to replicate the PDE solver to a high degree of accuracy, trained on Imperial's HPC. However, the model lacked generalization capabilities as it was only usable on the trained scenario and resolution (ie not usable in other physics simulations), which is why our research group moved onto SCALED. 
 
 # Project Overview
@@ -29,7 +29,7 @@ SCALED also outperforms state-of-the-art data-driven deep learning numerical sol
 
 ---
 
-## Technologies Used
+## Relevant Skills
 
 - PyTorch
 - HPC/Distributed Computing
