@@ -22,12 +22,27 @@ We have demonstrated SCALED on urban flow scenarios in the **South Kensington Ar
 <div style="display: flex; justify-content: space-between; gap: 20px;">
 
   <div style="flex: 1; text-align: center;">
-    <img src="/imgs/pde_x.gif" alt="Traditional Airflow" style="max-width: 100%;">
+    <img src="/imgs/pde_x.gif" alt="Traditional Air flows" style="max-width: 100%;">
     <p><strong>PDE Solver (Traditional Approach)</strong></p>
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <img src="/imgs/ai_x.gif" alt="SCALED Airflow" style="max-width: 100%;">
+    <img src="/imgs/ai_x.gif" alt="SCALED Air flows" style="max-width: 100%;">
+    <p><strong>SCALED (Neural Network)</strong></p>
+  </div>
+
+</div>
+<h3 style="text-align: center;">Computational Physics Simulation of the Generated Unseen Area</h3>
+
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="/imgs/pde_x_gen.gif" alt="Traditional Air flows" style="max-width: 100%;">
+    <p><strong>PDE Solver (Traditional Approach)</strong></p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="/imgs/ai_x_gen.gif" alt="SCALED Air flows" style="max-width: 100%;">
     <p><strong>SCALED (Neural Network)</strong></p>
   </div>
 
