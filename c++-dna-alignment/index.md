@@ -8,7 +8,9 @@ permalink: /cpp-dna-alignment/
 
 Global alignment (Needleman-Wunsch) is a classical dynamic programming algorithm in bioinformatics, used to compare entire DNA sequences for similarity. Similarly, local alignment (Smith-Waterman) identifies and compares the most similar subsequences within a pair of DNA sequences.
 
-![DNA Alignment Overview](your-image-link-here)
+![DNA Alignment Overview](imgs/images.png)
+
+*Graphic borrowed from Journal of Computational Biology*
 
 For our project at D24H, our deep learning workflow required two critical components:
 1. **Generation of mutated DNA sequences**, and  
