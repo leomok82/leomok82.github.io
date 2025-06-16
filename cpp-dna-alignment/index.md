@@ -23,5 +23,7 @@ While there are a few open-source C++/Python packages available, most do not sup
 ## Performance
 Our package delivers speeds surpassing implementations from Biopython and Pyalign, including a multitude of options such as semi-global alignment, affine gap penalties, and mutation rates.
 
+## In Progress
+CUDA capability work in progress. The CPU implementation is not slow, however, host-device transfer *after* generating mutations poses as a main bottleneck. Therefore a GPU implementation will significant speed up the subsequent model training phase
 
 <a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
