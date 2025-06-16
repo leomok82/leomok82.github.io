@@ -12,7 +12,7 @@ I'm interested in:
 
 Check out some of the things I've been working on:
 - [Fluid Dynamics Generative Foundational Model](/fluid-dynamics) (Publication)
-- [C++ DNA alignment tool](\c++-dna-alignment)
+- [C++ DNA alignment tool](\cpp-dna-alignment)
 - [Deep learning DNA Hash database]
 - [DNA metadata RAG tool]
 - [C++ image processing tool]
