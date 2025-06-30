@@ -12,8 +12,8 @@ Similarity between DNA sequences is usually computed using [alignment](/cpp-dna-
 Hence, searching through a DNA database is notoriously slow, as it cannot be computed using a simple euclidean distance. We develop a **novel Transformer based similarity preserving DNA embeddings**, and a subsequent database of the SRA Microbe (423,994 Files/ 2TB) is built and optimized for rapid searching. 
 
 ### Project involvement
-- Development of the PyTorch codebase, writing majority of the model's code base
-- Optimized training process with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
+- Development of the PyTorch model, writing majority of the model's code base
+- Model training and optimization with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
 - Conceptualized significant parts of the model, such as the transformer backbone and loss functions.
 
 
