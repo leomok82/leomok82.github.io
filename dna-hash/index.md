@@ -11,6 +11,12 @@ Similarity between DNA sequences is usually computed using [alignment](/cpp-dna-
 
 Hence, searching through a DNA database is notoriously slow, as it cannot be computed using a simple euclidean distance. We develop a **novel Transformer based similarity preserving DNA embeddings**, and a subsequent database of the SRA Microbe (423,994 Files/ 2TB) is built and optimized for rapid searching. 
 
+### Project involvement
+- Leading PyTorch code development, writing majority of the model's code base
+- Optimized training process with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
+- Conceptualized significant parts of the model, such as the transformer backbone and loss functions.
+
+
 ### Triplet Loss
 Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (corgi) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance. Below is an illustration of Triplet Loss 
 
@@ -32,10 +38,6 @@ Then, with our trained model, we can now compress even more sequences into a sea
   <img src="/imgs/MgDB.png" alt="SCALED Air flows" style="max-width: 100%; height: auto;">
 </div>
 
-### Project involvement
-- Leading PyTorch code development, writing majority of the model's code base
-- Optimized training process with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
-- Conceptualized significant parts of the model, such as the transformer backbone and loss functions.
 
 ### Acknowledgements
 This project was done as a part of D24H (HKU). The research group leader and first author are in charge of the publication of the paper and distribution/commercialization of the software.
