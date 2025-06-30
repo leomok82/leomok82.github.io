@@ -1,0 +1,8 @@
+body {
+  color: #111 !important;     /* Darker text */
+  font-weight: 500;           /* Optional: a bit bolder */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000 !important;     /* Headings darker */
+}
