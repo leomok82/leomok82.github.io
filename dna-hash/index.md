@@ -14,7 +14,7 @@ Hence, searching through a DNA database is notoriously slow, as it cannot be com
 Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (corgi) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance. Below is an illustration of Triplet Loss 
 
 <div>
-  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 100%; height: auto;">
+  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 10%; height: auto;">
 </div>
 (source: https://gombru.github.io/2019/04/03/ranking_loss/)
 
@@ -24,12 +24,15 @@ Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, in
 
 The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing.
 
-<img src="imgs/hash_train.png" alt="model" width="400"/>
-
+<div>
+  <img src="/imgs/hash_train.png" alt="SCALED Air flows" style="max-width: 10%; height: auto;">
+</div>
 ### Database Construction
 Then, with our trained model, we can now compress even more sequences into a searchable database. We first sample representative regions of each sequence (100-10000bp in length) using a simple hash function, reducing the data size. Then we use SPARK distributed computing to process batches of sequences which are then de-duplicated into a set of unique hash codes. Traditional database compression techniques are then leveraged to compress it into a smaller format but still effective at rapid retrieval.
-<img src="imgs/MgDB" alt="db" width="400"/>
 
+<div>
+  <img src="/imgs/MgDB.png" alt="SCALED Air flows" style="max-width: 10%; height: auto;">
+</div>
 
 ### Project involvement
 - Leading PyTorch code development, writing majority of the model's code base
