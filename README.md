@@ -16,6 +16,8 @@ Check out some of the things I've been working on:
 
 - [C++ DNA alignment tool](\cpp-dna-alignment)
 - [Deep learning DNA Hash database](\dna-hash) (WIP Publication)
+<img src="imgs/hash_train.png" alt="fluid" width="500"/>
+
 - [DNA metadata RAG tool using Huggingface BERT and LLMs]
 - [C++ image processing tool]
 👉 [View my projects](/project)
