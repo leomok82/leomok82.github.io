@@ -22,11 +22,8 @@ Triplet Loss is a common technique used in training similarity-preserving embedd
 ### Model Architecture
 Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, insertions, deletions) to create the similar and dissimilar sequences, then uses a custom optimized alignment function to compute a **similarity score**. The lightweight transformer model (1.5M) then creates size 128 float embeddings and 128-bit binary hashes. The loss is then computed to ensure the embedding distances are **exactly equal to the alignment scores**. 
 
-The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing.
+The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing. *The model architecture is redacted as the paper is still work in progress*
 
-<div>
-  <img src="/imgs/hash_train.png" alt="SCALED Air flows" style="max-width: 100%; height: auto;">
-</div>
 ### Database Construction
 Then, with our trained model, we can now compress even more sequences into a searchable database. We first sample representative regions of each sequence (100-10000bp in length) using a simple hash function, reducing the data size. Then we use SPARK distributed computing to process batches of sequences which are then de-duplicated into a set of unique hash codes. Traditional database compression techniques are then leveraged to compress it into a smaller format but still effective at rapid retrieval.
 
