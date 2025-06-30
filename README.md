@@ -14,7 +14,7 @@ Check out some of the things I've been working on:
 - [Fluid Dynamics Generative Foundational Model](/fluid-dynamics) (Publication under submission)
 - [C++ DNA alignment tool](\cpp-dna-alignment)
 - [Deep learning DNA Hash database](\dna-hash) (WIP Publication)
-- [DNA metadata RAG tool]
+- [DNA metadata RAG tool using Huggingface BERT and LLMs]
 - [C++ image processing tool]
 👉 [View my projects](/project)
 
