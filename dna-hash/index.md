@@ -11,9 +11,29 @@ Hence, searching through a DNA database is notoriously slow, as it cannot be com
 
 ## Model Architecture
 ### Triplet Loss
-Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (labrador) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance.
+Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (corgi) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance. Below is an illustration of Triplet Loss 
 
-<Lebron image.>
+<img src="imgs/triplet_loss.png" alt="triplet" width="400"/>
+
+(source: https://gombru.github.io/2019/04/03/ranking_loss/)
+
 
 ### Model Architecture
-Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, insertions, deletions) to create the similar and dissimilar sequences, then uses a custom optimized alignment function to compute a **similarity score**. The lightweight transformer model (1.5M) then creates size 128 float embeddings and 128-bit binary hashes. The float embeddings stablize training and 128 bit hashes are for rapid searching and further compression. The loss is then computed to ensure the embedding distances are **exactly equal to the alignment scores**.
+Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, insertions, deletions) to create the similar and dissimilar sequences, then uses a custom optimized alignment function to compute a **similarity score**. The lightweight transformer model (1.5M) then creates size 128 float embeddings and 128-bit binary hashes. The loss is then computed to ensure the embedding distances are **exactly equal to the alignment scores**. 
+
+The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing.
+
+<img src="imgs/hash_train.png" alt="model" width="400"/>
+
+### Database Construction
+Then, with our trained model, we can now compress even more sequences into a searchable database. We first sample representative regions of each sequence (100-10000bp in length) using a simple hash function, reducing the data size. Then we use SPARK distributed computing to process batches of sequences which are then de-duplicated into a set of unique hash codes. Traditional database compression techniques are then leveraged to compress it into a smaller format but still effective at rapid retrieval.
+<img src="imgs/MgDB" alt="db" width="400"/>
+
+
+### Project involvement
+- Leading PyTorch code development, writing majority of the model's code base
+- Optimized training process with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
+- Conceptualized significant parts of the model, such as the transformer backbone and loss functions.
+
+### Acknowledgements
+This project was done as a part of D24H (HKU). The research group leader and first author are in charge of the publication of the paper and distribution/commercialization of the software.
