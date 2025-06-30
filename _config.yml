@@ -1,9 +1,3 @@
-theme: jekyll-theme-cayman
+theme: theme: jekyll-theme-slate
 title: Leo's homepage
 description: Welcome!
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      css: "/assets/css/custom.css"
