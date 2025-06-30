@@ -14,9 +14,9 @@ Hence, searching through a DNA database is notoriously slow, as it cannot be com
 Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (corgi) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance. Below is an illustration of Triplet Loss 
 
 
-  <div>
-    <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 400;">
-  </div>
+<div>
+  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width:100;">
+</div>
 (source: https://gombru.github.io/2019/04/03/ranking_loss/)
 
 
