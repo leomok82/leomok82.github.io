@@ -15,7 +15,7 @@ Triplet Loss is a common technique used in training similarity-preserving embedd
 
 
 <div>
-  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 100px;">
+  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 40%;">
 </div>
 (source: https://gombru.github.io/2019/04/03/ranking_loss/)
 
