@@ -41,3 +41,6 @@ Then, with our trained model, we can now compress even more sequences into a sea
 
 ### Acknowledgements
 This project was done as a part of D24H (HKU). The research group leader and first author are in charge of the publication of the paper and distribution/commercialization of the software.
+
+<a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
+
