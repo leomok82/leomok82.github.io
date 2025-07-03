@@ -10,7 +10,7 @@ A powerful tool for **natural language** searching and filtering **Sequence Read
 
 ---
 
-![Front end](imgs/Home.jpeg)
+<img src="/imgs/Home.jpeg" alt="Home" style="max-width: 80%;">
 
 
 ---
@@ -55,7 +55,7 @@ Users can search for relevant study abstracts using either full text matching or
 
 Would return relevant studies containing the 'ESBL' keyword, and then samples containing E.Coli. 
 
-![Study](imgs/StudyResult.jpeg)
+<img src="/imgs/SRA Metadata Study Result.jpeg" alt="search result" style="max-width: 80%;">
 
 ### Search by Sample
 Instead of manually filtering records, users can input natural language queries such as:
@@ -70,9 +70,8 @@ Our system processes the query and:
    - **Time range**: *after 2017*
 3. **Finds the most relevant SRA records** within these constraints.
 
-**Example Output:**
+<img src="/imgs/example.png" alt="search result" style="max-width: 80%;">
 
-![Example Output](imgs/example.png)
 
 
 ### Advanced Search
@@ -90,8 +89,6 @@ For more **specific** searches, users can apply structured **filters**. These ca
 ---
 
 
-### Taxonomy
-![Front end](imgs/Taxonomy.jpeg)
 
 
 ### Cost
