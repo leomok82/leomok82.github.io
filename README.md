@@ -14,12 +14,13 @@ Check out some of the things I've been working on:
 - [Fluid Dynamics Generative Foundational Model](/fluid-dynamics) (Publication under submission)
 <img src="imgs/ai_x_gen.gif" alt="fluid" width="500"/>
 - [Deep learning DNA Hash database](\dna-hash) (WIP Publication)
-<img src="imgs/MgDB.png" alt="fluid" width="500"/>
+<img src="imgs/MgDB.png" alt="fluid" width="650"/>
 
 - [C++ DNA alignment tool](\cpp-dna-alignment)
 
 - [DNA metadata RAG tool using Huggingface BERT and LLMs](\dna-metadata-rag)
-- 
+<img src="imgs/SRA Metadata Sample Search.jpeg" alt="fluid" width="500"/>
+
 Code Sample:
 - [C++ image processing tool](https://github.com/leomok82/ImageProcessing)
 
