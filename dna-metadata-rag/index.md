@@ -121,3 +121,5 @@ Leo Mok @ leom@d24h.hk
 - [JinaAI](https://github.com/jina-ai)
 - [SentenceTransformers](https://www.sbert.net)
 
+<a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
+
