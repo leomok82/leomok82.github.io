@@ -3,7 +3,7 @@ layout: default
 title: "Optimized CUDA C++ DNA Alignment and Mutation Algorithms"
 permalink: /cpp-dna-alignment/
 ---
-
+# Optimized CUDA C++ DNA Alignment and Mutation Algorithms
 ## Project Origin
 
 Global alignment (Needleman-Wunsch) is a classical dynamic programming algorithm in bioinformatics, used to compare entire DNA sequences for similarity. Similarly, local alignment (Smith-Waterman) identifies and compares the most similar subsequences within a pair of DNA sequences.
