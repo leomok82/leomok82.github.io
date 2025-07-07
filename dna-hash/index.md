@@ -26,7 +26,7 @@ Triplet Loss is a common technique used in training similarity-preserving embedd
 (source: https://gombru.github.io/2019/04/03/ranking_loss/)
 
 
-### Model Architecture
+### Model Brief
 Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, insertions, deletions) to create the similar and dissimilar sequences, then uses a custom optimized alignment function to compute a **similarity score**. The lightweight transformer model (1.5M) then creates binary hashes, then a triplet loss is computed ensuring the embedding distance is *at least equal to the alignment score*.
 The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing. *The model architecture is redacted as the paper is still work in progress*
 
