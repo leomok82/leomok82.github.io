@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "DNA metadata search tool with RAG and Vector Database"
+title: "DNA metadata search RAG Database"
 permalink: /dna-metadata-rag/
 ---
 
