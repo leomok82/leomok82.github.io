@@ -1,4 +1,3 @@
-# Leo Mok
 
 I'm a deep learning practitioner with a Master's from Imperial, and I have worked with top research labs at Imperial College London and HKU. I have 1 year professional experience with a bioinformatics/deep learning startup under HKU. 
 I'm interested in:
