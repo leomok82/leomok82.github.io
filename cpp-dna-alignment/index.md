@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Optimized CUDA C++ DNA Alignment and Mutation Algorithms"
+title: "CUDA C++ DNA Alignment and Mutation"
 permalink: /cpp-dna-alignment/
 ---
 # Optimized CUDA C++ DNA Alignment and Mutation Algorithms
