@@ -1,11 +1,15 @@
 
-I'm a deep learning practitioner with a Master's from Imperial, and I have worked with top research labs at Imperial College London and HKU. I have 1 year professional experience with a bioinformatics/deep learning startup under HKU. 
+I'm Leo, currently a contractor @ Meta FAIR (via Salt). 
+
+I like AI/ML research, especially algorithms for cool applications like DNA and Fluid Dynamics, and making things run fast on GPU clusters with distributed systems and CUDA kernels. 
+
+
+I have worked with top research labs at Meta, Imperial College London, HKU, and hopefully many more collaborators to come! I'd say the most interesting one is the DNA language model (BERT) for database searching, similar to RA for DNA!
 I'm interested in:
 
 - AI applications for science
 - C++ and High Performance Computing
 - Bioinformatics
-- Building Efficient Software
 
 ## Projects
 
