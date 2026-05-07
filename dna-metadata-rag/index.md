@@ -1,125 +1,97 @@
 ---
 layout: default
-title: "DNA metadata search RAG Database"
+title: "DNA Metadata Search RAG Database"
 permalink: /dna-metadata-rag/
 ---
 
-# 🧬 SRA Metadata Search Tool
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+    <div class="hero-content" style="max-width: 720px; margin: 0 auto;">
+      <div class="section-label" style="justify-content: center;">Engineering Project</div>
+      <h1>🧬 SRA Metadata <span class="highlight">RAG Search</span> Tool</h1>
+      <p class="hero-subtitle">Natural language search over 35M+ genomic metadata records</p>
+      <p class="hero-description">
+        A powerful tool for natural language searching and filtering of Sequence Read Archive (SRA) metadata, enabling researchers to query large-scale genomic datasets from 583,982 studies with ease and precision.
+      </p>
+      <div class="tags" style="justify-content: center;">
+        <span class="tag">LLMs</span>
+        <span class="tag">BERT</span>
+        <span class="tag">pgvector</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Flask</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-A powerful tool for **natural language** searching and filtering **Sequence Read Archive (SRA) metadata**, enabling researchers and bioinformaticians to query large-scale genomic datasets with ease and precision. The database contains 35M+ samples taken from 583,982 studies.
+<section class="section" style="padding-top: 0;">
+  <div style="max-width: 860px; margin: 0 auto;">
 
----
+  <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; margin-bottom: 24px; text-align: center;">
+    <img src="/imgs/Home.jpeg" alt="SRA Metadata Search Tool" style="max-width: 90%; border-radius: var(--radius-sm); border: 1px solid var(--gray-100);">
+  </div>
 
-<img src="/imgs/Home.jpeg" alt="Home" style="max-width: 80%;">
+  <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; margin-bottom: 24px;">
+    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; color: var(--gray-900);">Algorithm Pipeline</h3>
 
+    <div style="display: grid; gap: 16px;">
+      <div style="padding: 16px; background: var(--gray-50); border-radius: var(--radius-sm);">
+        <strong style="color: var(--blue-primary);">1. Query Formatting & Expansion</strong>
+        <p style="color: var(--gray-600); font-size: 0.88rem; margin-top: 4px;">Gemini-2.0-flash-lite transforms natural language into structured categories — handles typos, translates languages, extracts metadata, and expands synonyms.</p>
+      </div>
+      <div style="padding: 16px; background: var(--gray-50); border-radius: var(--radius-sm);">
+        <strong style="color: var(--blue-primary);">2. SQL Filtering</strong>
+        <p style="color: var(--gray-600); font-size: 0.88rem; margin-top: 4px;">Combines semantic + user-defined filters into optimized PostgreSQL queries with indexed metadata fields.</p>
+      </div>
+      <div style="padding: 16px; background: var(--gray-50); border-radius: var(--radius-sm);">
+        <strong style="color: var(--blue-primary);">3. Embedding Retrieval</strong>
+        <p style="color: var(--gray-600); font-size: 0.88rem; margin-top: 4px;">SentenceTransformers (BERT-based) with Float16 embeddings and ANN retrieval via pgvector IVFFLAT index.</p>
+      </div>
+      <div style="padding: 16px; background: var(--gray-50); border-radius: var(--radius-sm);">
+        <strong style="color: var(--blue-primary);">4. Reranking</strong>
+        <p style="color: var(--gray-600); font-size: 0.88rem; margin-top: 4px;">JinaAI cross-encoder re-ranks results for context-aware ranking. Query speed: &lt;0.2s on 35M+ entries.</p>
+      </div>
+    </div>
+  </div>
 
----
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 24px; text-align: center;">
+      <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; color: var(--gray-900);">Search by Study</h4>
+      <img src="/imgs/SRA Metadata Study Result.jpeg" alt="Study search" style="width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--gray-100);">
+    </div>
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 24px; text-align: center;">
+      <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 12px; color: var(--gray-900);">Search by Sample</h4>
+      <img src="/imgs/example.png" alt="Sample search" style="width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--gray-100);">
+    </div>
+  </div>
 
-## Algorithm Breakdown
-The system employs a multi-stage process for **query interpretation, embedding-based retrieval, and ranking** to ensure accurate and fast results.
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">My Contributions</h3>
+      <ul style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.8; list-style: none; padding: 0;">
+        <li>• Backend & LLM integration</li>
+        <li>• PostgreSQL and pgvector setup</li>
+        <li>• Algorithm development</li>
+      </ul>
+    </div>
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">Stats</h3>
+      <ul style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.8; list-style: none; padding: 0;">
+        <li>• <strong>35M+</strong> searchable entries</li>
+        <li>• <strong>583,982</strong> studies indexed</li>
+        <li>• <strong>&lt;0.2s</strong> query speed</li>
+        <li>• <strong>$0.000243</strong> per query</li>
+      </ul>
+    </div>
+  </div>
 
-### 1️⃣ Query Formatting & Expansion
-- **Model:** *Gemini-2.0-flash-lite*
-- **Task:** Transforms the user’s natural language query into structured categories.
-- **Enhancements:**
-  - **Handles typos** (e.g., "sueqncing" → "sequencing")
-  - **Translates languages** (e.g., "西班牙蝙蝠" → "Spanish bat")
-  - **Extracts key metadata** (e.g., "after 2015" → `year > 2015`)
-  - **Expands synonyms** (e.g., "whole genome sequencing" → "WGS")
+  <div style="background: var(--blue-light); border-radius: var(--radius-lg); padding: 24px 32px; margin-bottom: 24px;">
+    <p style="color: var(--gray-700); font-size: 0.9rem; line-height: 1.6;">
+      <strong>Team:</strong> Tracy Wong (Data curation, Frontend, PostgreSQL, Flask) & Leo Mok (Backend, LLM integration, pgvector, Algorithm). Built at D24H (HKU).
+    </p>
+  </div>
 
-### 2️⃣ SQL Filtering
-- **Combines extracted filters from both semantic search and user-defined filters.**
-- **Executes optimized queries** on a PostgreSQL database with indexed metadata fields.
+  <a href="/" class="contact-btn contact-btn-primary" style="display: inline-flex;">← Back to Home</a>
 
-### 3️⃣ Embedding-Based Retrieval
-- **Model:** *SentenceTransformers (BERT-based)*
-- **Storage Format:** *Float16 embeddings for efficiency*
-- **Search Mechanism:** Approximate Nearest Neighbor (ANN) retrieval with **pgvector**.
-
-### 4️⃣ Optimized ANN Search with `pgvector`
-- **Index Type:** IVFFLAT
-- **Query Speed:** < 0.2 seconds per query on a **35M+ entry** dataset.
-- **Benefits:** Fast, scalable search with minimal computational overhead.
-
-### 5️⃣ Reranking with JinaAI
-- **Purpose:** Re-ranks initial ANN-retrieved records to prioritize those that best match the **raw user query**.
-- **Method:** Uses transformer-based **cross-encoder models** for **context-aware ranking**.
-
----
-
-
-### Search by Study
-Users can search for relevant study abstracts using either full text matching or semantic search. 
-
-> Studies with ESBL
-
-Would return relevant studies containing the 'ESBL' keyword, and then samples containing E.Coli. 
-
-<img src="/imgs/SRA Metadata Study Result.jpeg" alt="search result" style="max-width: 80%;">
-
-### Search by Sample
-Instead of manually filtering records, users can input natural language queries such as:
-
-> "Malaysian Pangolin after 2017"
-
-Our system processes the query and:
-1. **Corrects typos** and interprets **context**.
-2. **Extracts key attributes**, such as:
-   - **Genus name**: *Manis*
-   - **Country**: *Malaysia*
-   - **Time range**: *after 2017*
-3. **Finds the most relevant SRA records** within these constraints.
-
-<img src="/imgs/example.png" alt="search result" style="max-width: 80%;">
-
-
-
-### Advanced Search
-For more **specific** searches, users can apply structured **filters**. These can be used **alone or in combination** with semantic queries.
-
-#### Available Filters:
-- **Organism Name** *(e.g., Homo sapiens, Manis javanica)*
-- **Geographical Location** *(e.g., Malaysia, USA, Europe)*
-- **Time Range** *(e.g., Before 2010, Between 2015-2020)*
-- **Study Type** *(e.g., Transcriptome, Metagenomics, WGS)*
-- **Sequencing Platform** *(e.g., Illumina, PacBio, Oxford Nanopore)*
-- **Read Length** *(e.g., >150bp, 50-100bp)*
-- **Accession Number** *(e.g., PRJNA123456, SRR9876543)*
-
----
-
-
-
-
-### Cost
-Cost per query 0.000243 USD. ~ 500 queries = 1 HKD
-
-## Authors
-Tracy Wong @ tracywong@d24h.hk
-- Data curation, Front end & UI Development, PostgreSQL database, flask development
-
-Leo Mok @ leom@d24h.hk
-- Backend & LLM integration, PostgreSQL and pgvector setup, algorithm development
-
-
-
-### Software
-- PostgreSQL 16<
-- pgvector 0.8.0<
-- Python 3.9
-#### Python Packages
-- flask 3.1.0
-- psycopg2 2.9.10
-- sentence-transformers 3.4.1
-- pandas 2.2.3
-- torch 2.6.0
-- numpy 2.0.2
-
-## References & Resources
-- [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
-- [pgvector Documentation](https://github.com/pgvector/pgvector)
-- [JinaAI](https://github.com/jina-ai)
-- [SentenceTransformers](https://www.sbert.net)
-
-<a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
-
+  </div>
+</section>

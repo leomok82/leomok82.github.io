@@ -1,3 +1,4 @@
-theme: minima
 title: Leo Mok
 description: AI/ML Researcher • Meta FAIR
+baseurl: ""
+url: "https://leomok82.github.io"

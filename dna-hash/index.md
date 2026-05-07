@@ -4,42 +4,76 @@ title: "Deep Learning DNA Hash Database"
 permalink: /dna-hash/
 ---
 
-# Deep Learning DNA Hash
-*The model architecture is redacted as the paper is still work in progress*
+<section class="hero" style="padding-bottom: 40px;">
+  <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+    <div class="hero-content" style="max-width: 720px; margin: 0 auto;">
+      <div class="section-label" style="justify-content: center;">Research Project</div>
+      <h1>Deep Learning <span class="highlight">DNA Hash</span> Database</h1>
+      <p class="hero-subtitle">Transformer-based similarity-preserving embeddings for rapid DNA search</p>
+      <p class="hero-description">
+        DNA similarity is traditionally computed via alignment (O(N²)), making database search extremely slow. We develop <strong>novel Transformer-based similarity-preserving DNA embeddings</strong> with a searchable database of the SRA Microbe (423,994 files / 2TB).
+      </p>
+      <div class="tags" style="justify-content: center;">
+        <span class="tag">PyTorch</span>
+        <span class="tag">DDP / HPC</span>
+        <span class="tag">Transformers</span>
+        <span class="tag">SPARK</span>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--gray-400); margin-top: 12px; font-style: italic;">Model architecture redacted — paper in progress</p>
+    </div>
+  </div>
+</section>
 
-Similarity between DNA sequences is usually computed using [alignment](/cpp-dna-alignment), which is a dynamic programming problem of complexity **O(N2)**. 
+<section class="section" style="padding-top: 0;">
+  <div style="max-width: 860px; margin: 0 auto;">
 
-Hence, searching through a DNA database is notoriously slow, as it cannot be computed using a simple euclidean distance. We develop a **novel Transformer based similarity preserving DNA embeddings**, and a subsequent database of the SRA Microbe (423,994 Files/ 2TB) is built and optimized for rapid searching. 
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">My Contributions</h3>
+      <ul style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.8; list-style: none; padding: 0;">
+        <li>• Development of the PyTorch model (majority of codebase)</li>
+        <li>• Training with DDP on HPC (V100, A40, H100)</li>
+        <li>• Conceptualized transformer backbone & loss functions</li>
+      </ul>
+    </div>
+    <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px;">
+      <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">Triplet Loss</h3>
+      <p style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.7;">
+        Common technique for training similarity-preserving embeddings (e.g. BERT). Uses anchor, positive, and negative examples to ensure embedding distances reflect true similarity.
+      </p>
+    </div>
+  </div>
 
-### Project involvement
-- Development of the PyTorch model, writing majority of the model's code base
-- Model training and optimization with **data-distributed parallel** (DDP) processing on the company's HPC (V100, A40, H100)
-- Conceptualized significant parts of the model, such as the transformer backbone and loss functions.
+  <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; margin-bottom: 24px; text-align: center;">
+    <img src="/imgs/triplet_loss.png" alt="Triplet Loss" style="max-width: 50%; border-radius: var(--radius-sm);">
+    <p style="font-size: 0.8rem; color: var(--gray-400); margin-top: 8px;">Source: gombru.github.io</p>
+  </div>
 
+  <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; margin-bottom: 24px;">
+    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">Model Overview</h3>
+    <p style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.7; margin-bottom: 16px;">
+      Our Metagenomic Transformer uses mutated sequences (substitutions, insertions, deletions) to create similar/dissimilar pairs, with a custom optimized alignment function for similarity scores. The lightweight model (1.5M params) creates binary hashes with triplet loss ensuring embedding distance matches alignment score.
+    </p>
+    <p style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.7;">
+      Trained on SRA Reference Sequence (~200GB) using 4×H100 GPUs with distributed computing.
+    </p>
+  </div>
 
-### Triplet Loss
-Triplet Loss is a common technique used in training similarity-preserving embeddings (e.g. BERT), which uses an anchor (dog), a positive (corgi) and a negative (cat) to create embeddings. The distance between the embedding pairs are then computed and ensured to be at least a sufficient distance. Below is an illustration of Triplet Loss 
+  <div style="background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-100); padding: 32px; margin-bottom: 24px;">
+    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--gray-900);">Database Construction</h3>
+    <p style="color: var(--gray-600); font-size: 0.92rem; line-height: 1.7; margin-bottom: 16px;">
+      With the trained model, we compress sequences into a searchable database: sample representative regions via simple hashing → process batches with SPARK distributed computing → deduplicate into unique hash codes → apply traditional compression for rapid retrieval.
+    </p>
+    <img src="/imgs/MgDB.png" alt="Database Architecture" style="width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--gray-100);">
+  </div>
 
-<div>
-  <img src="/imgs/triplet_loss.png" alt="SCALED Air flows" style="max-width: 50%; height: auto;">
-</div>
-(source: https://gombru.github.io/2019/04/03/ranking_loss/)
+  <div style="background: var(--blue-light); border-radius: var(--radius-lg); padding: 24px 32px; margin-bottom: 24px;">
+    <p style="color: var(--gray-700); font-size: 0.9rem; line-height: 1.6;">
+      <strong>Acknowledgements:</strong> This project was done as a part of D24H (HKU). The research group leader and first author are in charge of publication and software distribution.
+    </p>
+  </div>
 
+  <a href="/" class="contact-btn contact-btn-primary" style="display: inline-flex;">← Back to Home</a>
 
-### Model Brief
-Our model (Metagenomic Transformer) uses mutated sequences (in substitutions, insertions, deletions) to create the similar and dissimilar sequences, then uses a custom optimized alignment function to compute a **similarity score**. The lightweight transformer model (1.5M) then creates binary hashes, then a triplet loss is computed ensuring the embedding distance is *at least equal to the alignment score*.
-The model was trained on SRA Reference Sequence (~200GB) using 4xH100 HPUs with GPU distributed computing. *The model architecture is redacted as the paper is still work in progress*
-
-### Database Construction
-Then, with our trained model, we can now compress even more sequences into a searchable database. We first sample representative regions of each sequence (100-10000bp in length) using a simple hash function, reducing the data size. Then we use SPARK distributed computing to process batches of sequences which are then de-duplicated into a set of unique hash codes. Traditional database compression techniques are then leveraged to compress it into a smaller format but still effective at rapid retrieval.
-
-<div>
-  <img src="/imgs/MgDB.png" alt="SCALED Air flows" style="max-width: 100%; height: auto;">
-</div>
-
-
-### Acknowledgements
-This project was done as a part of D24H (HKU). The research group leader and first author are in charge of the publication of the paper and distribution/commercialization of the software.
-
-<a href="/" style="display: inline-block; padding: 10px 20px; background-color: #007acc; color: white; text-decoration: none; border-radius: 5px;">← Back to Home</a>
-
+  </div>
+</section>
