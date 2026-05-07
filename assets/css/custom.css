@@ -1,8 +1,198 @@
-body {
-  color: #111 !important;     /* Darker text */
-  font-weight: 500;           /* Optional: a bit bolder */
+/* Meta-style UI */
+:root {
+  --meta-blue: #0064E0;
+  --meta-blue-hover: #0052B4;
+  --meta-dark: #1C2B33;
+  --meta-gray-900: #1C1E21;
+  --meta-gray-700: #444950;
+  --meta-gray-500: #65676B;
+  --meta-gray-300: #B0B3B8;
+  --meta-gray-100: #F0F2F5;
+  --meta-white: #FFFFFF;
+  --meta-border: #E4E6EB;
+  --meta-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --meta-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --meta-radius: 12px;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif !important;
+  color: var(--meta-gray-900) !important;
+  background-color: var(--meta-gray-100) !important;
+  line-height: 1.6;
+}
+
+.page-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Header / Hero */
+.site-header {
+  background: var(--meta-white) !important;
+  border-bottom: 1px solid var(--meta-border) !important;
+  box-shadow: var(--meta-shadow);
+}
+
+.site-title {
+  color: var(--meta-blue) !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
+}
+
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #000 !important;     /* Headings darker */
+  color: var(--meta-gray-900) !important;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--meta-blue);
+  display: inline-block;
+}
+
+/* Bio section */
+.bio-section {
+  background: var(--meta-white);
+  border-radius: var(--meta-radius);
+  padding: 32px;
+  box-shadow: var(--meta-shadow);
+  margin-bottom: 32px;
+}
+
+.bio-section p {
+  color: var(--meta-gray-700);
+  font-size: 1.05rem;
+}
+
+/* Interest tags */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.interest-tags li {
+  background: var(--meta-gray-100);
+  color: var(--meta-blue);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--meta-border);
+}
+
+/* Project cards */
+.project-card {
+  background: var(--meta-white);
+  border-radius: var(--meta-radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--meta-shadow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid var(--meta-border);
+}
+
+.project-card:hover {
+  box-shadow: var(--meta-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.15rem;
+}
+
+.project-card h3 a {
+  color: var(--meta-gray-900) !important;
+  text-decoration: none;
+}
+
+.project-card h3 a:hover {
+  color: var(--meta-blue) !important;
+}
+
+.project-date {
+  color: var(--meta-gray-500);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.project-card p {
+  color: var(--meta-gray-700);
+  margin: 8px 0 0 0;
+  font-size: 0.95rem;
+}
+
+.project-card .badge {
+  display: inline-block;
+  background: #E7F3FF;
+  color: var(--meta-blue);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.project-card img {
+  border-radius: 8px;
+  margin-top: 16px;
+  max-width: 100%;
+  border: 1px solid var(--meta-border);
+}
+
+/* Contact section */
+.contact-section {
+  background: var(--meta-white);
+  border-radius: var(--meta-radius);
+  padding: 24px 32px;
+  box-shadow: var(--meta-shadow);
+  margin-top: 32px;
+}
+
+.contact-section a {
+  color: var(--meta-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Links */
+a {
+  color: var(--meta-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--meta-blue-hover);
+  text-decoration: underline;
+}
+
+/* Wrapper override */
+.wrapper {
+  max-width: 860px !important;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--meta-white) !important;
+  border-top: 1px solid var(--meta-border) !important;
+  color: var(--meta-gray-500) !important;
 }
