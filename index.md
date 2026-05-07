@@ -7,21 +7,23 @@ title: Leo Mok
   <div class="hero-container">
     <div class="hero-content">
       <h1>Hi, I'm <span class="highlight">Leo Mok</span></h1>
-      <p class="hero-subtitle">AI/ML Researcher @ Meta FAIR</p>
+      <p class="hero-subtitle">Research Engineer (Contractor) @ Meta FAIR</p>
       <p class="hero-description">
-        I build AI/ML systems for science — from DNA language models to fluid dynamics simulations — and make them run fast on GPU clusters with distributed systems and CUDA kernels.
+        I build AI/ML systems — from DNA language models to fluid dynamics simulations — and make them run fast on GPU clusters with distributed systems and CUDA kernels.
+      </p>
+      <p class="hero-description">
+        I have worked with top research labs at Meta, Imperial College London, HKU, and hopefully many more collaborators to come! Currently working with the Data foundations team @ Meta FAIR. I'd say the most interesting one is the DNA language model (BERT) for database searching, similar to RAG for DNA.
       </p>
       <div class="tags">
-        <span class="tag">🧬 AI for Science</span>
-        <span class="tag">⚡ High Performance Computing</span>
-        <span class="tag">🧠 Bioinformatics</span>
-        <span class="tag">🔧 Distributed Systems</span>
+        <span class="tag">AI applications for science</span>
+        <span class="tag">C++ & High Performance Computing</span>
+        <span class="tag">Bioinformatics</span>
       </div>
       <div class="orgs">
         <span>Collaborated with</span>
         <div class="org-badges">
           <span class="org-badge">Meta</span>
-          <span class="org-badge">Imperial College</span>
+          <span class="org-badge">Imperial College London</span>
           <span class="org-badge">HKU</span>
         </div>
       </div>
@@ -35,7 +37,7 @@ title: Leo Mok
 <section class="section" id="projects">
   <div class="section-header">
     <div class="section-label">Portfolio</div>
-    <h2 class="section-title">Featured Projects</h2>
+    <h2 class="section-title">Projects</h2>
   </div>
 
   <div class="projects-grid">
@@ -47,11 +49,9 @@ title: Leo Mok
       <div class="project-card-body">
         <div class="project-card-date">📅 Sep 2024 – Present</div>
         <h3 class="project-card-title"><a href="/fluid-dynamics">Fluid Dynamics Generative Foundational Model</a></h3>
-        <p class="project-card-desc">Scalable generative foundational model for computational physics, achieving 15x speedup over traditional CFD solvers using diffusion transformers.</p>
+        <p class="project-card-desc">Scalable generative foundational model for computational physics, achieving 15x speedup over traditional CFD solvers.</p>
         <div class="project-card-footer">
-          <span class="badge badge-blue">Under Review</span>
-          <span class="badge badge-gray">PyTorch</span>
-          <span class="badge badge-gray">HPC</span>
+          <span class="badge badge-blue">Publication under submission</span>
         </div>
       </div>
     </div>
@@ -61,49 +61,43 @@ title: Leo Mok
         <img src="imgs/MgDB.png" alt="DNA Hash Database">
       </div>
       <div class="project-card-body">
-        <div class="project-card-date">📅 Jan 2024 – Jun 2024</div>
+        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
         <h3 class="project-card-title"><a href="/dna-hash">Deep Learning DNA Hash Database</a></h3>
-        <p class="project-card-desc">Deep learning approach to DNA sequence hashing for efficient database searching using learned embeddings and triplet loss.</p>
+        <p class="project-card-desc">A deep learning approach to DNA sequence hashing for efficient database searching using learned embeddings.</p>
         <div class="project-card-footer">
           <span class="badge badge-green">Completed</span>
-          <span class="badge badge-gray">Deep Learning</span>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Sep 2023 – Dec 2023</div>
+        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
         <h3 class="project-card-title"><a href="/cpp-dna-alignment">C++ DNA Alignment Tool</a></h3>
-        <p class="project-card-desc">High-performance DNA sequence alignment tool implemented in C++ for fast genomic analysis with optimized algorithms.</p>
+        <p class="project-card-desc">High-performance DNA sequence alignment tool implemented in C++ for fast genomic analysis.</p>
         <div class="project-card-footer">
           <span class="badge badge-green">Completed</span>
-          <span class="badge badge-gray">C++</span>
-          <span class="badge badge-gray">Algorithms</span>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Jun 2024 – Aug 2024</div>
+        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
         <h3 class="project-card-title"><a href="/dna-metadata-rag">DNA Metadata RAG Tool</a></h3>
         <p class="project-card-desc">Retrieval-Augmented Generation tool using HuggingFace BERT and LLMs for DNA metadata search and retrieval.</p>
         <div class="project-card-footer">
           <span class="badge badge-green">Completed</span>
-          <span class="badge badge-gray">LLMs</span>
-          <span class="badge badge-gray">RAG</span>
         </div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Mar 2023 – May 2023</div>
+        <div class="project-card-date">📅 Jun 2024</div>
         <h3 class="project-card-title"><a href="https://github.com/leomok82/ImageProcessing">C++ Image Processing Tool</a></h3>
-        <p class="project-card-desc">Image processing library in C++ with various filters and transformation algorithms. Open source code sample.</p>
+        <p class="project-card-desc">Image processing library written in C++ with various filters and transformation algorithms.</p>
         <div class="project-card-footer">
-          <span class="badge badge-gray">C++</span>
           <span class="badge badge-gray">Code Sample</span>
         </div>
       </div>
@@ -115,8 +109,8 @@ title: Leo Mok
 <section class="section" id="contact">
   <div class="contact-card">
     <div class="contact-info">
-      <h3>Let's connect</h3>
-      <p>Open to research collaborations and interesting projects.</p>
+      <h3>Contact</h3>
+      <p>You can find me on:</p>
     </div>
     <div class="contact-links">
       <a href="https://github.com/leomok82" class="contact-btn contact-btn-primary" target="_blank" rel="noopener">
