@@ -47,7 +47,7 @@ title: Leo Mok
         <img src="imgs/ai_x_gen.gif" alt="Fluid Dynamics Generative Model">
       </div>
       <div class="project-card-body">
-        <div class="project-card-date">📅 Sep 2024 – Present</div>
+        <div class="project-card-date">📅 Summer 2024</div>
         <h3 class="project-card-title"><a href="/fluid-dynamics">Fluid Dynamics Generative Foundational Model</a></h3>
         <p class="project-card-desc">Scalable generative foundational model for computational physics, achieving 15x speedup over traditional CFD solvers.</p>
         <div class="project-card-footer">
@@ -61,7 +61,7 @@ title: Leo Mok
         <img src="imgs/MgDB.png" alt="DNA Hash Database">
       </div>
       <div class="project-card-body">
-        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
+        <div class="project-card-date">📅 2024 - 2025 </div>
         <h3 class="project-card-title"><a href="/dna-hash">Deep Learning DNA Hash Database</a></h3>
         <p class="project-card-desc">A deep learning approach to DNA sequence hashing for efficient database searching using learned embeddings.</p>
         <div class="project-card-footer">
@@ -72,7 +72,7 @@ title: Leo Mok
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
+        <div class="project-card-date">📅 2024 - 2025 </div>
         <h3 class="project-card-title"><a href="/cpp-dna-alignment">C++ DNA Alignment Tool</a></h3>
         <p class="project-card-desc">High-performance DNA sequence alignment tool implemented in C++ for fast genomic analysis.</p>
         <div class="project-card-footer">
@@ -83,7 +83,7 @@ title: Leo Mok
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Sep 2024 – Aug 2025</div>
+        <div class="project-card-date">📅 2024 - 2025 </div>
         <h3 class="project-card-title"><a href="/dna-metadata-rag">DNA Metadata RAG Tool</a></h3>
         <p class="project-card-desc">Retrieval-Augmented Generation tool using HuggingFace BERT and LLMs for DNA metadata search and retrieval.</p>
         <div class="project-card-footer">
@@ -94,7 +94,7 @@ title: Leo Mok
 
     <div class="project-card">
       <div class="project-card-body">
-        <div class="project-card-date">📅 Jun 2024</div>
+        <div class="project-card-date"> Jun 2024</div>
         <h3 class="project-card-title"><a href="https://github.com/leomok82/ImageProcessing">C++ Image Processing Tool</a></h3>
         <p class="project-card-desc">Image processing library written in C++ with various filters and transformation algorithms.</p>
         <div class="project-card-footer">
